@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body id="body-main">
+
+    <div id="bg-container"></div>
+    <div class="overlay"></div>
+
+    <div class="lamp-container">
+        <div class="lamp" id="lamp-toggle">
+            <div class="lamp-head"></div>
+            <div class="lamp-string"></div>
+            <div class="lamp-light" id="light"></div>
+        </div>
+        <p class="lamp-text">Lamp (click)</p>
+    </div>
+
+    <div class="container" id="login-panel">
+        <div class="login-box">
+            <div class="form-content">
+                <div class="form-left">
+                    <h2>Sign Up</h2>
+                    <form id="loginForm">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" id="email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="input-group">
+                            <label>Password</label>
+                            <input type="password" id="password" required>
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <button type="submit" class="submit-btn">Sign Up</button>
+                        <p class="footer-text">Already Have Account?</p>
+                    </form>
+                </div>
+                <div class="form-right">
+                    <img src="https://via.placeholder.com/200x300/2a1b3d/6b5b95?text=Illustration" id="side-img" alt="Illustration">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <input type="file" id="bg-input" accept="image/*,video/*" hidden>
+        <button onclick="document.getElementById('bg-input').click()"><i class="fas fa-file-upload"></i> Upload</button>
+        <button onclick="saveSettings()"><i class="fas fa-save"></i> Save</button>
+        <button onclick="toggleDesktop()"><i class="fas fa-desktop"></i> Desktop Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                  </html>
+                    
